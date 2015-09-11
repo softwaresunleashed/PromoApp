@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Configurable parameters -->
+
+<resources>
+
+    <!-- App Feature Set - FeatureTags for Free & Paid Apps goes here. -->
+    <integer name="free_version_code">1</integer>
+    <integer name="host_ads">1</integer>
+
+    <!-- Payment Gateways to Enable -->
+    <integer name="PG_PAYPAL">0</integer>
+    <integer name="PG_GOOGLE">1</integer>
+
+    
+    <string name="facebook_app_id">175066609494449</string>
+
+
+    <string name="app_name">PromoApp</string>
+    <string name="versionCode">1</string>
+    <string name="versionName">@string/app_version</string>
+    <string name="app_version"> ( v1.0 ) 2015-09-11</string>
+    <string name="donate">Donate A Coffee</string>
+
+    <string name="add_to_blacklist">Add Number to Blacklist...</string>
+    <string name="blacklist_dialog_msg">Enter the number to be added to Blacklisted numbers.</string>
+
+    <string name="open_recordings">Open Recordings</string>
+    <string name="ok_got_it">Ok Got It!!!</string>
+    <string name="save_file">Save</string>
+    <string name="skip_always">Dont Ask Again</string>
+    <string name="add">Add To List</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="confirm_msg">Yes Please!</string>
+    <string name="deny_msg">No Thanks!</string>
+    <string name="dialog_request_promotional_email_msg">Spread a word about BEEOK to all your friends.
+    Clicking YES, assumes your approval to send a Promotional Email to ALL email contacts in your list.</string>
+    <string name="dialog_exit_app_message">Confirm Application Exit by pressing YES.</string>
+    <string name="dialog_call_blocker_message">Call Blocker Feature : Feature available in Paid Version.</string>
+
+    <string name="version_history">
+        "\n" "Version History :"
+        "\n" "==============="
+        "\n" "v1.0_2015-08-14 : Initial BEEOK App upload to GooglePlayStore. Under development."
+      
+    </string>
+
+    <string name="call_recorder_explaination">
+
+            "\n\n""BEEOK app allows users to Automatically Record all Incoming or Outgoing Voice Calls without any user intervention."
+            "\n""After your Voice Call ends, you can find the recorded files stored with a pre-formatted filename."
+
+            "\n\nThe files are stored at the following location(s): "
+            "\n\nMicrophone Recordings : "
+            "\n/Documents/BEEOK/RECS_MIC/"
+
+            "\n\nVoice Recordings : "
+            "\n/Documents/BEEOK/RECS_VOICE_CALLS/"
+    </string>
+
+    <string name="app_about">
+             "\n\n"
+            "     BEEOK is aimed at users who wish to record phone conversations(both uplink &amp; downlink side) or for taking voice notes in a class."
+            "\n\n""     How is it different from Other call recorders available in the market? (You may ask). Well, BEEOK sits in your phone completely silent, and comes to life when you get an Incoming call or make an Outgoing call."
+            "\n\n""The recorded file after the call is over is saved to Documents folder for later retrieval."
+            "\n""** BEEOK comes handy when you wish to take Voice notes, (say in a class or seminar or an interview)."
+            "\n""** BEEOK enables you to Block unwanted calls from Stalkers, Call Centres"
+            "\n""** BEEOK works even after you restart your phone."
+
+            "\n\n""     We would love to hear from you, your feedback, suggestions &amp; bugs(if any) to make BEEOK even better."
+
+            "\n\n""e-mail: softwares.unleashed@gmail.com"
+            "\n""Web: www.softwaresunleashed.com"
+            "\n""Tweet Us: @SwUnleashedInc"
+
+            "\n\n""If you appreciate the work done by the developer of BEEOK app, please do take sometime out to rate this app on Google Store and Occasionally click on Ads. :)"
+            "\n\n" "Liked our product? Help us keep our engines running, Donate a Coffee  - https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=PEMRBXBFEFXW6"
+    </string>
+
+
+    <string name="email_subject">New Android App -- BEEOK v1.8 (Automatic Call &amp; Mic Recorder) -- Newly Launched!!!</string>
+    <string name="email_body">
+        "Dear Friend,"
+        "\n\n" "Hope this mail finds you in great health!!"
+        "\n""Your friend just used BEEOK to record voice calls (Uplink and Downlink both), take self voice-notes, block unwanted calls. We are sure you would like to give it a try as well."
+        "\n\n""Allow us to introduce BEEOK Android App. You are amongst first lucky few to have a preview of this useful app."
+        "\n" "You can find it on Google Play too. You can install it from Google Play store. Search for 'BEEOK' on Google PlayStore "
+        "\n\n""Here is the direct link to App, BEEOK , on Google Play Store."
+        "\n\n""Link (Absolutely Free App) : https://play.google.com/store/apps/details?id=com.unleashed.android.beeokunleashed"
+        "\n""Hope to hear from you!!"
+        "\n""======================================"
+        "\n""Software Unleashed Inc."
+        "\n""www.softwaresunleashed.com"
+        "\n""softwares.unleashed@gmail.com"
+        "\n\n" "Liked our product? Help us keep our engines running, Donate a Coffee - https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=PEMRBXBFEFXW6"
+    </string>
+
+
+
+    <!-- Google Admob Banner Ad ID -->
+    <string name="banner_ad_unit_id">ca-app-pub-9975842691888931/6437390203</string>
+
+
+    <!-- Actual live banner for BEEOK...Use this in final production app
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>    - Test Ad ID
+    <string name="banner_ad_unit_id">ca-app-pub-9975842691888931/6437390203</string>    - Live Ad ID
+    -->
+
+    <!-- Appszoom Ad : App Key-->
+    <string name="az_appkey">76ea3d2aeb23ae6b641f9af812aabf45</string>
+    <integer name="timer_az_appkey">3</integer>
+
+    <!-- Adbuddiz Ad : App Key-->
+    <string name="adbuddiz_appkey">"e537af4a-babc-4c39-82fd-1567664e99e6"</string>
+    <integer name="timer_adbuddiz_appkey">5</integer>
+
+    <!-- App Next Ad : App Key-->
+    <string name="appnext_appkey">2a80554c-bbc5-4b5e-9264-b0aa5c82d03e</string>
+    <integer name="timer_appnext_appkey">7</integer>
+
+
+    <!-- Paypal App ID .. A new app needs to be added in Paypal developer page .. .APPS section
+    https://developer.paypal.com/developer/applications/ ...then click on CreateApp button -->
+    <string name="BEEOK_PAYPAL_SANDBOX_APP_ID">AQG6FlL_Xm2n6BkwgEJ05kS_9Q8IIfnQdR050greve3ZRszPWQPgPjwlqGvv8yk3CJtVjjORs0G5ESTf</string>
+    <string name="BEEOK_PAYPAL_LIVE_APP_ID">AXUQ9cLholM1C9qF7mnF8exJxJw6wFuIEXFIEK9pCSHcApq2y5VbkuDHOl_V3zrtWuYZAnFG10OI4Em4</string>
+
+
+    <!-- Google Play Apps Public Key
+                key is stored in reverse order ...i.e. key = p4+p3+p2+p1
+    -->
+    <!-- License key for BEEOK ....Developer Console - Click on App - click on Services and API - Licensing and IN-APP Billing -->
+    <string name="p1">BbQCsxewhTNbY9i/+XptxlPdE56ECB72f7JK2AP1OIhtpzdigqiYWpr+psBzEkZyZBEY+4I53ou4wIDAQAB</string>
+    <string name="p2">ZHF2w/Ut5fEXa7QaoLSmmMbAuQkcdKe2ib6OdjGl03MX4wqD5H/jw7kcdcN8ok2JbBwcstbv5/525OQ4ksKXIBTr+twr1eznJ6kXbro</string>
+    <string name="p3">C4XHO/cmOxp26zkUjpGUoXXICLw2nWyDC2vv1MlxoXTMspXG5U+vo2v3PGGCxhWOFJrgx7URHaTvFmH27vuFb9umHYvwkVmI06KqR89</string>
+    <string name="p4">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqO5DrI9C/+XP0TYKpYJTbyFfA705cH0rmkoIWtVidC5DlAN5SBusruxFmRZ</string>
+
+</resources>

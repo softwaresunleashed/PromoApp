@@ -21,6 +21,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.facebook.appevents.AppEventsLogger;
 import com.unleashed.android.promoapp.Fragments.LoginPage;
 import com.unleashed.android.promoapp.R;
 
@@ -120,6 +121,22 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
     }
 
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+
+        // Facebook : Logs 'install' and 'app activate' App Events.
+        AppEventsLogger.activateApp(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        // Facebook Logs 'app deactivate' App Event.
+        AppEventsLogger.deactivateApp(this);
+    }
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to

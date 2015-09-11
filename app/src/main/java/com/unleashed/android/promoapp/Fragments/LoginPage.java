@@ -3,13 +3,16 @@ package com.unleashed.android.promoapp.Fragments;
 
 import android.os.Bundle;
 
+
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.unleashed.android.promoapp.R;
-
+import com.facebook.*;
 
 public class LoginPage extends Fragment {
 
@@ -17,6 +20,11 @@ public class LoginPage extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     private int mParam1;
+
+    // Facebook Login Related Stuff
+    private LoginButton FbLoginButton;
+    private CallbackManager callbackManager;
+    ////
 
 
 
@@ -45,6 +53,37 @@ public class LoginPage extends Fragment {
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_login_page, container, false);
+
+
+        /////////////////////////
+        FacebookSdk.sdkInitialize(rootView.getContext().getApplicationContext());
+        callbackManager = CallbackManager.Factory.create();
+
+        FbLoginButton = (LoginButton)rootView.findViewById(R.id.login_button);
+        FbLoginButton.setReadPermissions("user_friends");
+        // If using in a fragment
+        FbLoginButton.setFragment(this);
+        // Other app specific specialization
+
+        // Callback registration
+        FbLoginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                // App code
+            }
+
+            @Override
+            public void onCancel() {
+                // App code
+            }
+
+            @Override
+            public void onError(FacebookException exception) {
+                // App code
+            }
+        });
+
+        ////////////////////////
 
 
         return rootView;
