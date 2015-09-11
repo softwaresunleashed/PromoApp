@@ -119,6 +119,8 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
     }
 
+
+
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
@@ -139,9 +141,15 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
                     f = LoginPage.newInstance(position);
                     break;
 
+                case 1:
+                    f = LoginPage.newInstance(position);
+                    break;
+
+                case 2:
+                    f = LoginPage.newInstance(position);
+                    break;
+
             }
-
-
 
             return f;
             // getItem is called to instantiate the fragment for the given page.
@@ -155,18 +163,27 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
             return 3;
         }
 
+
         @Override
         public CharSequence getPageTitle(int position) {
+
             Locale l = Locale.getDefault();
+
+            String strTitle = null;
             switch (position) {
                 case 0:
-                    return getString(R.string.title_login).toUpperCase(l);
+                    strTitle = getString(R.string.title_login).toUpperCase(l);
+                    break;
                 case 1:
-                    return getString(R.string.title_section2).toUpperCase(l);
+                    strTitle =  getString(R.string.title_section2).toUpperCase(l);
+                    break;
                 case 2:
-                    return getString(R.string.title_section3).toUpperCase(l);
+                    strTitle =  getString(R.string.title_section3).toUpperCase(l);
+                    break;
             }
-            return null;
+
+            return strTitle;
+
         }
     }
 
