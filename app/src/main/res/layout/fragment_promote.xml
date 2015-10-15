@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unleashed.android.promoapp.ui.Fragments.Promote"
+    android:background="@color/com_facebook_blue">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/ll_options">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load From Templates..."
+                android:id="@+id/btnLoadTemplate"
+                android:background="@color/com_facebook_button_send_background_color"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_title"
+            android:layout_below="@id/ll_options"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Product Title"
+                android:id="@+id/textView"
+                android:layout_gravity="left|top"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_title"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@android:color/white"
+                android:minLines="@integer/min_textbox_lines_title_link" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_title"
+            android:id="@+id/ll_message"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Product Description"
+                android:id="@+id/textView2"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_message"
+                android:background="@android:color/white"
+                android:minLines="@integer/min_textbox_lines_mesg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_message"
+            android:id="@+id/ll_link_to_product"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Product Link"
+                android:id="@+id/textView3"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_product_link"
+                android:background="@android:color/white"
+                android:minLines="@integer/min_textbox_lines_title_link" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_link_to_product"
+            android:id="@+id/ll_facebook_buttons"
+            android:gravity="bottom"
+            android:layout_margin="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share On Timeline"
+                android:id="@+id/btnWriteOnMyTimeline"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@color/com_facebook_button_send_background_color"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

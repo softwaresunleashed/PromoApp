@@ -3,15 +3,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.unleashed.android.promoapp.ui.Fragments.LoginPage">
+    tools:context="com.unleashed.android.promoapp.ui.Fragments.LoginPage"
+    android:background="@color/com_facebook_button_background_color_disabled">
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+        android:text="Test Code"
+        android:id="@+id/btnTest"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_facebook_components">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_fb_user_info"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/user_image_width"
+                android:layout_height="@dimen/user_image_height"
+                android:id="@+id/fbUserImage"
+                android:src="@drawable/com_facebook_profile_picture_blank_square"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/no_user_logged_in"
+                android:id="@+id/fbUserName"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let&apos;s Promote"
+            android:id="@+id/btnShare"
+            android:layout_below="@id/login_button"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/com_facebook_button_background_color"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 
 </FrameLayout>

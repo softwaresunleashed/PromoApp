@@ -12,8 +12,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.facebook.appevents.AppEventsLogger;
-import com.unleashed.android.promoapp.ui.Fragments.LoginPage;
 import com.unleashed.android.promoapp.R;
+import com.unleashed.android.promoapp.ui.Fragments.LoginPage;
+import com.unleashed.android.promoapp.ui.Fragments.Promote;
 
 import java.util.Locale;
 
@@ -151,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
                     break;
 
                 case 1:
-                    f = LoginPage.newInstance(position);
+                    f = Promote.newInstance(position);
                     break;
 
                 case 2:
@@ -169,7 +170,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 1;
+            return 2;
         }
 
 

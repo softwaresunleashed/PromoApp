@@ -8,9 +8,15 @@
     <integer name="free_version_code">1</integer>
     <integer name="host_ads">1</integer>
 
+
+
     <!-- Payment Gateways to Enable -->
     <integer name="PG_PAYPAL">0</integer>
     <integer name="PG_GOOGLE">1</integer>
+
+
+    <integer name="min_textbox_lines_mesg">5</integer>
+    <integer name="min_textbox_lines_title_link">2</integer>
 
     
     <string name="facebook_app_id">1482978328665372</string>
@@ -19,22 +25,31 @@
     <string name="app_name">PromoApp</string>
     <string name="versionCode">1</string>
     <string name="versionName">@string/app_version</string>
-    <string name="app_version"> ( v1.0 ) 2015-09-11</string>
+    <string name="app_version"> ( v1.0 ) 2015-09-20</string>
     <string name="donate">Donate A Coffee</string>
 
-    <string name="add_to_blacklist">Add Number to Blacklist...</string>
-    <string name="blacklist_dialog_msg">Enter the number to be added to Blacklisted numbers.</string>
 
-    <string name="open_recordings">Open Recordings</string>
-    <string name="ok_got_it">Ok Got It!!!</string>
-    <string name="save_file">Save</string>
+
+    <string name="ok">Ok</string>
+    <string name="save">Save</string>
+    <string name="no_user_logged_in">No User</string>
+    <string name="no_records_found">No Pre-Saved Templates Found. </string>
+
+
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Post Written Successfully</string>
+    <string name="error">Error While Posting.</string>
+
+
+
     <string name="skip_always">Dont Ask Again</string>
-    <string name="add">Add To List</string>
+
     <string name="done">Done</string>
     <string name="cancel">Cancel</string>
 
     <string name="confirm_msg">Yes Please!</string>
     <string name="deny_msg">No Thanks!</string>
+
     <string name="dialog_request_promotional_email_msg">Spread a word about BEEOK to all your friends.
     Clicking YES, assumes your approval to send a Promotional Email to ALL email contacts in your list.</string>
     <string name="dialog_exit_app_message">Confirm Application Exit by pressing YES.</string>
@@ -43,22 +58,11 @@
     <string name="version_history">
         "\n" "Version History :"
         "\n" "==============="
-        "\n" "v1.0_2015-08-14 : Initial BEEOK App upload to GooglePlayStore. Under development."
+        "\n" "v1.0_2015-09-20 : Initial Promo App upload to GooglePlayStore with Facebook Login integrated."
       
     </string>
 
-    <string name="call_recorder_explaination">
 
-            "\n\n""BEEOK app allows users to Automatically Record all Incoming or Outgoing Voice Calls without any user intervention."
-            "\n""After your Voice Call ends, you can find the recorded files stored with a pre-formatted filename."
-
-            "\n\nThe files are stored at the following location(s): "
-            "\n\nMicrophone Recordings : "
-            "\n/Documents/BEEOK/RECS_MIC/"
-
-            "\n\nVoice Recordings : "
-            "\n/Documents/BEEOK/RECS_VOICE_CALLS/"
-    </string>
 
     <string name="app_about">
              "\n\n"
@@ -80,7 +84,7 @@
     </string>
 
 
-    <string name="email_subject">New Android App -- BEEOK v1.8 (Automatic Call &amp; Mic Recorder) -- Newly Launched!!!</string>
+    <string name="email_subject">New Android App -- Promo v1.0 (Promotion App) -- Newly Launched!!!</string>
     <string name="email_body">
         "Dear Friend,"
         "\n\n" "Hope this mail finds you in great health!!"
